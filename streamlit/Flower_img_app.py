@@ -1,10 +1,6 @@
 import tensorflow as tf
 import os
 eff_model = tf.keras.models.load_model(os.path.join("streamlit/model/","eff_model.hdf5"))
-MobileNet_model = tf.keras.models.load_model(os.path.join("streamlit/model/","MobileNet_model.hdf5"))
-#res_model =  tf.keras.models.load_model('model\Res_model.h5',compile=False)
-#DenseNet_model =  tf.keras.models.load_model('model\DenseNet_model.hdf5',compile=False)
-#VGG_model =  tf.keras.models.load_model('model\VGG_model.h5',compile=False)
 
 import streamlit as st
 st.write("""
