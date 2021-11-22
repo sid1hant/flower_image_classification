@@ -1,7 +1,7 @@
 import tensorflow as tf
 import os
 ##eff_model = tf.keras.models.load_model(os.path.join("streamlit/model/","eff_model.hdf5"))
-MobileNet_model = tf.keras.models.load_model(os.path.join("/model","MobileNet_model.hdf5"))
+MobileNet_model = tf.keras.models.load_model(os.path.join("model/","MobileNet_model.hdf5"))
 
 import streamlit as st
 st.write("""
