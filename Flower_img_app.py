@@ -5,12 +5,12 @@ MobileNet_model = tf.keras.models.load_model(os.path.join("model/","MobileNet_mo
 
 import streamlit as st
 st.write("""
-         # Flower Image Classification
+         # Flower-----Image----Classification
          """
          )
-st.write("This is a simple image classification web app to predict the name of the Flower")
+st.write("This is  image classification app to predict the name of  Flower")
 file = st.file_uploader("Please upload an image file {.jpg| .jpeg}", type=["jpg","jpeg"])
-#choose_model = st.selectbox('Select a trained model:', ('MobileNet'))
+
 
 model = MobileNet_model
 
@@ -33,7 +33,7 @@ def validate_set(img):
 
     X_valid = []
 
-        #image = ImageOps.grayscale(image)
+        
         
     image = np.array(img)
     image_data_as_arr = np.asarray(image)
