@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Flower_img_app.py
+web: sh setup.sh && streamlit run --server.port $PORT Flower_img_app.py
